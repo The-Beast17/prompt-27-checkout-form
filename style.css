@@ -1,0 +1,116 @@
+*{
+    margin :0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height : 100%;
+    width : 100%;
+}
+
+main {
+    height : 100%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+}
+
+main form {
+    width : 500px;
+    display: flex;
+    flex-direction: column;
+    padding : 2%;
+    box-shadow: 0 0 5px grey;
+}
+
+form h1{
+    margin: 2vh 0;
+    text-align: center;
+}
+form h3{
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+form input{
+    padding : 1vh 3vh;
+    margin-top : 2.5vh;
+    border-radius : 5px;
+    outline: none;
+    border : 1px solid green;
+}
+
+form label{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .Name input{
+    width : 49%;
+}
+
+form .address select{
+    width : 30%;
+    padding : 1vh 3vh;
+    border-radius : 5px;
+    margin-top : 2.5vh;
+}
+
+form input:focus , form select:focus{
+    border : 1px solid rgba(119, 150, 244, 0.8);
+    box-shadow: 0px 0px 5px rgba(119, 150, 244, 0.8);
+}
+
+form button {
+    padding : 1.5vh 2vh;
+    font-size: 2vh;
+    font-weight: 600;
+    background-color: aquamarine;
+    border : none;
+    width : 70%;
+    margin: 2.5vh auto;
+    border-radius : 7px;
+    transition: 0.2s ease-in-out;
+}
+form button:hover{
+    background-color: rgb(14, 177, 122);
+}
+
+form .pay-box{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin : 2.5vh 0;
+}
+
+form .Payment{
+    display: flex;
+    justify-content: center; 
+    align-items: baseline;
+}
+
+form .Payment input{
+    margin : 0 2vh;
+}
+
+form .agree{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+form .agree input{
+    margin : 0 1vh;
+}
+
+
+/************************media queries*************************/
+@media (max-width : 600px){
+    main form {
+        width : 95%;
+    }
+}

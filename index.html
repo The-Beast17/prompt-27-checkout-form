@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt 27</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>CheckOut Form</h1>
+            <h3>Customer Information</h3>
+            <input type="email" placeholder="Enter Email">
+            <input type="number" placeholder="Mobile Number">
+
+            <h3>Shipping Information</h3>
+            <label for="" class="Name">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </label>
+
+            <label for="" class="address">
+                <select name="" id="country">
+                    <option value="none">Country</option>
+                    <option value="US">United State</option>
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Russia">Russia</option>
+                </select>
+                <select name="" id="state">
+                    <option value="none">State</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+
+                <select name="" id="city">
+                    <option value="none">City</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Ujjain">Ujjain</option>
+                    <option value="Munbai">Mumbai</option>
+                    <option value="Bhopal">bhopal</option>
+                    <option value="Dhar">Dhar</option>
+                </select>
+            </label>
+            <input type="text" placeholder="Address">
+            <input type="number" placeholder="Area Pincode">
+             
+            <h3>select Payment Mode</h3>
+
+            <div class="pay-box">
+                <label class="Payment">
+                    <input type="radio" name = "pay" value="COD"/>COD
+                </label>
+                <label class="Payment">
+                    <input type="radio" name = "pay" value="UPIs"/>UPIs
+                </label>
+                <label class="Payment">
+                    <input type="radio" name = "pay" value="Card"/>Card
+                </label>
+            </div>
+
+             <label for="" class="agree">
+             <input type="checkbox"> I agree tha given Information in correct
+            </label>
+
+            <button>Order Now</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
